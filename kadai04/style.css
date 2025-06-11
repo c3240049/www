@@ -1,0 +1,39 @@
+body{
+    font-size: 15px;
+    background-color: white;
+    font-family: "Yu Gothic",YuGotic,"MS Pゴシック",Meiryo;
+}
+
+header{
+    background-color: darkgray;
+    color: white;
+    text-align: center;
+}
+
+section{
+    width: 600px;
+    background-color: white;
+}
+
+img{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+main{
+    text-align: left;
+}
+
+div{
+    text-align: center;
+}
+
+button{
+    background-color: orange;  
+}
+
+footer{
+    text-align: center;
+    background-color: lightgrey;
+}
