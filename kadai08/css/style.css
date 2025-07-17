@@ -56,11 +56,11 @@ section{
     
 }
 
-main{
-    /* margin-left: 100px; */
+/* main{
+    margin-left: 100px;
     text-align: center;
     
-}
+} */
 
 p{
     padding-left: 10px;
@@ -69,5 +69,20 @@ p{
 
 .pos{
     margin: auto;
-    width: 900px;
+    width: 1200px;
+}
+
+iframe{
+    width: 90%;
+    height: auto;
+}
+
+.wow{
+    float: none;
+}
+
+.box{
+    text-align: center;
+    padding: 20px;
+    width: 180%;
 }
