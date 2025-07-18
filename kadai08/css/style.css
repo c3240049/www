@@ -20,7 +20,7 @@ h1{
 }
 
 .torii{
-    width: 535px;
+    width: 100%;
     margin: auto;
 }
 
@@ -106,7 +106,8 @@ iframe{
         font-size: 10px;
     } */
     .indexh1{
-        margin-right: 0;
+        display: block;
+        margin: auto;
     }
 
     .torii{
