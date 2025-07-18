@@ -5,6 +5,8 @@
     /* background-color: antiquewhite; */
 }
 
+
+
 body{
     background-color: rgba(243, 255, 201, 0.61);
 }
@@ -89,6 +91,21 @@ iframe{
     padding: 20px;
     width: 95%;
     height: auto;
+}
+
+@media screen and (max-width: 500px) {
+    /* body {
+        font-size: 10px;
+    } */
+    section{
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+        /* padding: 20px; */
+        margin-bottom: 10px;
+        width: 95%;
+        height: auto;
+    }
 }
 
 /* .box{
