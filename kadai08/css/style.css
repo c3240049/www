@@ -105,13 +105,16 @@ iframe{
     /* body {
         font-size: 10px;
     } */
+
+    header{
+        margin-right: 0;
+    }
     .indexh1{
-        display: block;
         margin: auto;
     }
 
     .torii{
-        width: 400px;
+        width: 100%;
         display: block;
         margin: auto;
     }
