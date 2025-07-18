@@ -29,6 +29,11 @@ h1{
     margin: auto;
 }
 
+.post{
+    width: 80%;
+    margin: auto;
+}
+
 /* div{
     
 } */
@@ -102,6 +107,11 @@ iframe{
     } */
     .indexh1{
         margin-right: 0;
+    }
+
+    .torii{
+        width: 400px;
+        display: block;
     }
     section{
         margin: 0 auto;
