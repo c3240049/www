@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配列の利用</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid #333;
+            padding: 7px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        #key{
+            background-color: bisque;
+        }
+        #nokey{
+            text-align: right;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <h1>利用料の計算</h1>
+    <table>
+        <tr>
+            <th id="key">No.</th>
+            <th id="key">料金(a)</th>
+            <th id="key">人数(b)</th>
+            <th id="key">a×b</th>
+        </tr>
+        <tr>
+            <th id="key">0</th>
+            <th id="nokey">500</th>
+            <th id="nokey">10</th>
+            <th><button onclick="multiply_0();">利用料の計算</button></th>
+        </tr>
+        <tr>
+            <th id="key">1</th>
+            <th id="nokey">980</th>
+            <th id="nokey">16</th>
+            <th><button onclick="multiply_1();">利用料の計算</button></th>
+        </tr>
+        <tr>
+            <th id="key">2</th>
+            <th id="nokey">1200</th>
+            <th id="nokey">8</th>
+            <th><button onclick="multiply_2();">利用料の計算</button></th>
+        </tr>
+        <script>
+            let a = [500,980,1200];
+            let b = [10,16,8];
+
+            function multiply_0(){
+                let anser = a[0] * b[0];
+                alert(anser);
+            }
+            function multiply_1(){
+                let anser = a[1] * b[1];
+                alert(anser);
+            }
+            function multiply_2(){
+                let anser = a[2] * b[2];
+                alert(anser);
+            }
+        </script>
+    </table>
+</body>
+</html>
