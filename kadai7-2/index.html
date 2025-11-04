@@ -9,14 +9,24 @@
     <h1>写真の一覧</h1>
     <p>以下のボタンをクリックすると、写真が一覧表示されます。</p>
     <div id="team">
-        <button onclick="photo()">写真を表示</button>
+        <button id="b" onclick="photo()">写真を表示</button>
     </div>
     <script>
         function photo(){
-            let a = document.getElementById("team");
+            let a = document.getElementById('team');
+            let list = ['<img src="photo_1.jpg" alt="写真">','<img src="photo_2.jpg" alt="写真">','<img src="photo_3.jpg" alt="写真">','<img src="photo_4.jpg" alt="写真">','<img src="photo_5.jpg" alt="写真">','<img src="photo_6.jpg" alt="写真">','<img src="photo_7.jpg" alt="写真">','<img src="photo_8.jpg" alt="写真">',];
             // a.innerHTML = '<img src="photo_1.jpg" alt="">';
             // a.insertAdjacentHTML('<img src="photo_1.jpg" alt="">') ;
-            a.innerHTML = ('<img src="photo_1.jpg" alt="">'+'<img src="photo_2.jpg" alt="">'+'<img src="photo_3.jpg" alt="">'+'<img src="photo_4.jpg" alt="">'+'<img src="photo_5.jpg" alt="">'+'<img src="photo_6.jpg" alt="">'+'<img src="photo_7.jpg" alt="">'+'<img src="photo_8.jpg" alt="">');
+            // a.innerHTML = ('<img src="photo_1.jpg" alt="">'+'<img src="photo_2.jpg" alt="">'+'<img src="photo_3.jpg" alt="">'+'<img src="photo_4.jpg" alt="">'+'<img src="photo_5.jpg" alt="">'+'<img src="photo_6.jpg" alt="">'+'<img src="photo_7.jpg" alt="">'+'<img src="photo_8.jpg" alt="">');
+            a.insertAdjacentHTML('beforeend',list[0]);
+            a.insertAdjacentHTML('beforeend',list[1]);
+            a.insertAdjacentHTML('beforeend',list[2]);
+            a.insertAdjacentHTML('beforeend',list[3]);
+            a.insertAdjacentHTML('beforeend',list[4]);
+            a.insertAdjacentHTML('beforeend',list[5]);
+            a.insertAdjacentHTML('beforeend',list[6]);
+            a.insertAdjacentHTML('beforeend',list[7]);
+            document.getElementById('b').remove();
         }
     </script>
 </body>
