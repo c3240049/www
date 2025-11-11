@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>繰り返し処理</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border: solid 1px #000;
+            width: 80px;
+            padding: 10px;
+            text-align: right;
+        }
+        th{
+            background-color: #99CCCC;
+            text-align: center;
+        }
+        /* #t_head{
+            text-align: right;
+        } */
+    </style>
+</head>
+<body onload="createTable()">
+    <h1>入場料の一覧</h1>
+    <table>
+        <thead id="t_head"></thead>
+        <tbody id="t_body"></tbody>
+    </table>
+
+    <script>
+        function createTable(){
+            let row = '<tr><th></th>';
+            let list = ['','大人','高校生','中学生','小学生'];
+            let money = [,800,680,450,380];
+
+            for(let j = 1; j <= 4; j++){
+                row = row + '<th>' + list[j] + '</th>';
+            }
+            row = row + '</th>';
+            document.getElementById('t_head').insertAdjacentHTML('beforeend',row)
+
+            for(let i = 1; i <= 5; i++){
+                let row = '<tr><th>' + i + '人' +'</th>';
+                for(let j = 1; j <= 4; j++){
+                    row = row + '<td>' + i*money[j] + '円' +'</td>';
+                }
+                row = row + '</tr>';
+                document.getElementById('t_body').insertAdjacentHTML('beforeend',row)
+            }
+        }
+    </script>
+</body>
+</html>
