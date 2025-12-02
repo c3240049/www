@@ -38,7 +38,7 @@
         // }
         let x = 1;
         while(x < 100){
-            if(x ^ 3 + (- 53 * x ^ 2 ) + 620 * x - 1036 == 0){
+            if(x ** 3 + (- 53 * x ** 2 ) + 620 * x - 1036 == 0){
                 console.log(x,x ^ 3 + (- 53 * x ^ 2 ) + 620 * x - 1036);
                 anser[count] = x;
                 count++;
@@ -55,7 +55,7 @@
 
 
         console.log(anser);
-        document.getElementById("message").innerHTML = [anser[0],anser[1],anser[2],"が解です。"];
+        document.getElementById("message").innerHTML = anser[0] + "," + anser[1] +","+ anser[2] + "が解です。";
     }
 </script>
 
