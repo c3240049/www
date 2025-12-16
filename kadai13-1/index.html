@@ -13,19 +13,24 @@
 
         <script>
             function show(){
+                var anser = 0;
                 var minanser = prompt("範囲の最小値を１～１０で入力してください");
                 if(minanser >= 1 && minanser <= 10){
                     var maxanser = prompt("範囲の最大値を１～１０で入力してください");
                     if(maxanser >= 1 && maxanser <= 10 && minanser < maxanser){
-                    for(let i = 1; i > 100; i++){
-                        for(let j = minanser; j > maxanser; j++){
-                            if(i % j == 0){
-                                console.log(i,j);
-                            }else{
+                    for(let i = 1; i < 10000; i++){
+                        let ok =true;
+                        for(let j = minanser; j <= maxanser; j++){
+                            if(i % j !== 0){
+                                ok = false;
                                 break;
                             }
-                            var anser = i;
                         }
+                        if(ok){
+                            anser = i;
+                            break;
+                        }
+                        
                     }
                     document.getElementById("message").innerHTML = minanser + "~" + maxanser + "で割り切れる最小の値は" + anser + "です。"
                     }else{
