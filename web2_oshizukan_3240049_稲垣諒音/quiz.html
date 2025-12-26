@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズページ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 必要に応じて figure と figcaption を使って、画像とキャプションを組み合わせること -->
+     <!-- 外部サイトへのリンクを1か所以上設けること（公式サイト、地図など）。 -->
+      <!-- Flexbox または Grid を利用して、推しカード（図鑑部分）をきれいに並べること。 -->
+       <!-- ホバー時の演出を 2か所以上 入れること。 -->
+        <!-- 少なくとも1か所、リスト要素（ul / ol）を使うこと。 -->
+        <!-- CSS トランジション（transition）を1か所以上使用し、動きに自然なアニメーションをつけること。
+         スマホ表示を想定し、メディアクエリ（@media）を1つ以上使ってレイアウトが大きく崩れないように調整すること。
+        例：画面幅が600px以下のとき、カードを1列表示にするなど。 -->
+    <!-- 正解数に応じてメッセージを切り替えること（少なくとも2パターン以上） OK-->
+     <!-- 「もう一度挑戦する」ボタンを用意し、クリックすると最初の問題からやり直せるようにすること。 OK-->
+</head>
+<body onload="start()">
+    <header>
+        <h1>クイズページ</h1>
+    </header>
+
+    <main>
+        <h2 id="problem">問題１</h2>
+        <p id="problem_content">犬の嗅覚は人間の何倍以上と言われている？</p>
+        <p id="selection">1:ポメラニアン<br>2:チワワ<br>3:トイプードル<br>4:パピヨン<br></p>
+        <!-- <p id="selection">1:息を整えるため<br>2:水分補給のため<br>3:体温を下げるため<br>4:威嚇のため<br></p> -->
+        <button onclick="answer(1)" id="button1">1</button>
+        <button onclick="answer(2)" id="button2">2</button>
+        <button onclick="answer(3)" id="button3">3</button>
+        <button onclick="answer(4)" id="button4">4</button>
+        <!-- <button onclick="start()" id="restert">再挑戦</button> -->
+        <p id="message1">ここに答えが表示されます。</p>
+        <p id="nextbutton"></p>
+        <p id="restart"></p>
+    </main>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
